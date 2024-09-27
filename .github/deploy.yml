@@ -1,0 +1,98 @@
+{
+    "name": "Zoro",
+    "description": " Whatsapp bot.",
+    "keywords": [
+        "whatsapp",
+        "bot"
+    ],
+    "stack": "container",
+    "env": {
+        "ASENA_SESSION": {
+            "description": "levanter_276094164d236e46a692774d94ffbe1555",
+            "required": true
+        },
+        "SUDO": {
+            "description": "2349042195409",
+            "required": false
+        },
+        "HANDLERS": {
+            "description": "enter prefix. Example . or ^[.,!/] for using multiple prefix like .,!/ or LyFE. Using keyword like LyFE will broke list and help command",
+            "required": true,
+            "value": "."
+        },
+        "SEND_READ": {
+            "description": "send read receipt.",
+            "required": false,
+            "value": "true"
+        },
+        "HEROKU": {
+            "description": "Enable heroku features",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Enter Heroku API Key.",
+            "required": true
+        },
+        "HEROKU_APP_NAME": {Zoro
+            "description": "Enter Heroku App Name",
+            "required": true
+        },
+        "DEBUG": {
+            "description": "debug",
+            "required": false,
+            "value": "false"
+        },
+        "CLR_SESSION": {
+            "description": "Enter true to delete old session.",
+            "required": false,
+            "value": "false"
+        },
+        "NO_ONLINE": {
+            "description": "set true to hide online.",
+            "required": false,
+            "value": "true"
+        },
+        "WARN_COUNT": {
+            "description": "Maximum no of warns",
+            "required": false,
+            "value": "3"
+        },
+        "WARN_MSG": {
+            "description": "Message send while kicking.",
+            "required": false,
+            "value": "you have been removed for stupidity"
+        },
+        "REMOVEBG_KEY": {
+            "description": "key from remove.bg",
+            "required": false,
+            "value": "null"
+        },
+        "LANGUAGE": {
+            "description": "Enter bot language, example EN for English, ID for Bahasa Indonesia, TR for Turkish",
+            "value": "EN"
+        },
+        "STICKER_PACKNAME": {
+            "description": "Yooooo!!!,Zoro",
+            "value": "🥰,lyfe00011"
+        },
+        "DISABLE_BOT": {
+            "description": "Disable or Block bot in group/chat.Enter required chat jid separated by ,",
+            "value": "null"
+        },
+        "FIND_API_KEY": {
+            "description": "key from https://dashboard.audd.io/",
+            "value": "null"
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku-community/apt"
+        }
+    ]
+}
