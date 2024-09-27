@@ -81,5 +81,5 @@ module.exports = {
   RENDER_NAME: (process.env.RENDER_NAME || '').trim(),
   RENDER_API_KEY: (process.env.RENDER_API_KEY || '').trim(),
   TIMEZONE: process.env.TIMEZONE,
-  CMD_REACTION: process.env.CMD_REACTION || 'true',
+  CMD_REACTION: process.env.CMD_REACTION || 'false',
 }
